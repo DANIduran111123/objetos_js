@@ -1,0 +1,123 @@
+/* 👑✨ Estilo Princesa Disney - Daniela Durán López ✨👑 */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('img/disney-princess-background-s6xbci1ldlv5a8b5.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #4a0e2e;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* 🌸 Flores decorativas animadas */
+body::before, body::after {
+  content: "🌸 🌷 🌺 🌹 🌼";
+  position: absolute;
+  font-size: 2rem;
+  color: rgba(255, 182, 193, 0.7);
+  animation: float 12s infinite linear;
+}
+
+body::before {
+  top: 10%;
+  left: 0;
+}
+
+body::after {
+  bottom: 10%;
+  right: 0;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(-20px); opacity: 0.8; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+header {
+  background: rgba(255, 210, 220, 0.9);
+  padding: 20px;
+  border-bottom: 3px solid #f4a1c4;
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.7);
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.2em;
+  color: #c2185b;
+  text-shadow: 2px 2px 6px #ffe6f0;
+}
+
+p {
+  font-size: 1.1em;
+  color: #8e3a59;
+}
+
+.pinterest-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 40px;
+}
+
+/* 💖 Tarjetas */
+.card {
+  background: rgba(255, 245, 248, 0.9);
+  border: 2px solid #f8a5c2;
+  border-radius: 25px;
+  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.4);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 182, 193, 0.8);
+}
+
+.img-card {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ffcce0;
+}
+
+.content {
+  padding: 20px;
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2em;
+  color: #c2185b;
+  text-shadow: 0 0 10px #ffe4ec;
+  margin-bottom: 10px;
+}
+
+.digital-clock, .calendar {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff8dcf, #ffb6c1);
+  padding: 10px 15px;
+  border-radius: 15px;
+  text-shadow: 0 0 6px #d63384;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.7);
+}
+
+footer {
+  background: rgba(255, 192, 203, 0.9);
+  padding: 15px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.6em;
+  color: #ffffff;
+  border-top: 2px solid #f8a5c2;
+  text-shadow: 1px 1px 4px #c2185b;
+  box-shadow: 0 -4px 8px rgba(255, 182, 193, 0.5);
+}
